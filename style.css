@@ -4,7 +4,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  
+  font-family: normal;
 }
 .container {
   max-width: 980px;
@@ -91,6 +91,11 @@ body {
   font-weight: 900;
   color: rgba(255, 99, 71, 0.336);
 
+  border-bottom: 1px solid black;
+}
+.card-realName{
+  padding: 5px;
+  font-size: 15px;
   border-bottom: 1px solid black;
 }
 .card-actors{

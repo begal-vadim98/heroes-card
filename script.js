@@ -25,6 +25,7 @@ const renderCard = (data) => {
     if(!elem.birthDay)  elem.birthDay = "Неизвестно";
     if(!elem.deathDay)  elem.deathDay = "Неизвестно";
     if(!elem.citizenship)  elem.citizenship = "Неизвестно";
+    if(!elem.realName)  elem.realName = "Неизвестно";
 
   boxList.insertAdjacentHTML('beforeend', `
     <li class="card-box">
@@ -35,6 +36,10 @@ const renderCard = (data) => {
 
     <div  class="card-name">
       <p>Персонаж: ${elem.name}</p>
+    </div>
+
+    <div  class="card-realName">
+      <p>Реальное имя: ${elem.realName}</p>
     </div>
 
     <div  class="card-actors">
@@ -86,7 +91,7 @@ const renderSelected = (data) => {
     })
   })
 
-  selected.forEach(option => {
+  selected.sort().forEach(option => {
     btn.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`)
   })
 }
