@@ -26,6 +26,7 @@ const renderCard = (data) => {
     if(!elem.deathDay)  elem.deathDay = "Неизвестно";
     if(!elem.citizenship)  elem.citizenship = "Неизвестно";
     if(!elem.realName)  elem.realName = "Неизвестно";
+    if(!elem.species)  elem.species = "Неизвестно";
 
   boxList.insertAdjacentHTML('beforeend', `
     <li class="card-box">
